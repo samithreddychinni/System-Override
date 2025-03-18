@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+  --neon-green: 77, 255, 77;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  overflow: hidden;
+}
+
+.text-neon-green {
+  color: rgb(var(--neon-green));
+}
+
+.border-neon-green {
+  border-color: rgb(var(--neon-green));
+}
+
+.bg-neon-green {
+  background-color: rgb(var(--neon-green));
+}
+
+.shadow-neon {
+  box-shadow: 0 0 10px rgba(var(--neon-green), 0.5), 0 0 20px rgba(var(--neon-green), 0.3), 0 0 30px
+    rgba(var(--neon-green), 0.1);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.animate-glitch {
+  animation: glitch 0.2s linear infinite;
+}
+
