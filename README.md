@@ -180,7 +180,7 @@ Pull requests and feature suggestions are welcome! Fork the repo, contribute, an
 ---
 
 ## 📜 *License*
-MIT License © 2024 [Your Name]
+MIT License © 2024 [samith reddy]
 
 ---
 
